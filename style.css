@@ -3,10 +3,12 @@ body {
      font-family: Inter, sans-serif;
  }
 
+/* Mobiiliversioon */
+
 /* PÄIS */
 header {
     background: #F89554;
-    padding: 15px 40px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,47 +20,45 @@ header a {
 }
 
 header h1 {
-    font-size: 40px;
-    font-family: Inter, sans-serif;
+    font-size: 22px;
     font-style: italic;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
-
 }
 
 .meist {
     background: #F2E2DD;
     padding: 10px 10px;
     border-radius: 10px;
-    font-size: 36px;
+    font-size: 20px;
 }
 
 /* MAANDUMISLEHT */
  .intro {
-     padding: 30px 60px;
-     text-align: center;
-     font-size: 20px;
+     padding: 20px 30px;
+     text-align: justify;
+     font-size: 16px;
  }
 
  .psyhholoogideValik {
+     padding: 20px 40px;
      display: flex;
-     justify-content: space-between;
-     overflow: auto;
-     padding: 0 40px;
+     flex-direction: column;
+     align-items: center;
+     gap: 40px;
  }
 
  .psyhholoog {
      background: #5E8490;
-     width: 200px;
      border-radius: 40px;
      padding: 25px 40px;
-     margin: 0 40px;
+     margin: 0 30px;
      display: flex;
      flex-direction: column;
      align-items: center;
  }
 
  .psyhholoog img {
-     width: 200px;
+     width: 230px;
  }
 
 .omadused {
@@ -70,7 +70,7 @@ header h1 {
 }
 
 .omadused ul li {
-    margin: 4px 0;
+    margin: 4px 4px;
     font-size: 20px;
 }
 
@@ -84,34 +84,34 @@ header h1 {
 }
 
 .outro {
-    padding: 30px 60px;
-    text-align: center;
-    font-size: 20px;
+    padding: 20px 30px;
+    text-align: justify;
+    font-size: 16px;
 }
 
 /* MEIST */
 .sisu {
     display: flex;
-    margin: 50px 100px;
-    justify-content: space-between;
-    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 30px;
 }
 
 .tutvustus {
     background: #5E8490;
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     color: #FFFFFF;
-    font-size: 20px;
-    width: 600px;
+    font-size: 16px;
 }
 
 .pildid {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 40px;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 30px 0 30px;
 }
 
 .pildid img {
@@ -121,18 +121,16 @@ header h1 {
 /* PSÜHHOLOOGID */
 .psyhholoog1 {
     background: #5E8490;
-    width: 200px;
-    height: 300px;
     border-radius: 40px;
     padding: 25px 40px;
+    margin: 0 30px 20px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .psyhholoog1 img {
-    width: 200px;
+    width: 230px;
 }
 
  /* JALUS */
@@ -148,7 +146,7 @@ footer {
 .kontaktinfo li {
     color: #FFFFFF;
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     margin: 10px 0;
 }
 
@@ -161,15 +159,109 @@ footer {
 
 .sotsmeedia a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5px 0;
+    margin: 2px 0;
 }
 
 .sotsmeedia a img {
     padding-left: 10px;
-    width: 28px;
+    width: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+    /* PÄIS */
+    header {
+        padding: 15px 50px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .meist {
+        font-size: 36px;
+    }
+
+    /* MAANDUMISLEHT */
+    .intro {
+        padding: 20px 60px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .psyhholoogideValik {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: auto;
+    }
+
+    .psyhholoog {
+        margin: 0 30px;
+    }
+
+    .psyhholoog img {
+        width: 200px;
+    }
+
+    .omadused ul li {
+        font-size: 18px;
+    }
+
+    .outro {
+        padding: 20px 60px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* MEIST */
+    .sisu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 40px 80px;
+        gap: 80px;
+    }
+
+    .tutvustus {
+        padding: 40px;
+        font-size: 20px;
+    }
+
+    .pildid {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .pildid img {
+        width: 300px;
+    }
+
+    /* PSÜHHOLOOGID */
+    .psyhholoog1 {
+        margin: 0;
+    }
+    .psyhholoog1 img {
+        width: 200px;
+    }
+
+    /* JALUS */
+    .kontaktinfo li {
+        font-size: 20px;
+    }
+
+    .sotsmeedia a {
+        margin: 4px 0;
+        font-size: 20px;
+    }
+
+    .sotsmeedia a img {
+        width: 28px;
+    }
 }
