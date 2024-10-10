@@ -39,14 +39,14 @@ header h1 {
      font-size: 20px;
  }
 
- .psühholoogideValik {
+ .psyhholoogideValik {
      display: flex;
      justify-content: space-between;
      overflow: auto;
      padding: 0 40px;
  }
 
- .psühholoog {
+ .psyhholoog {
      background: #5E8490;
      width: 200px;
      border-radius: 40px;
@@ -57,7 +57,7 @@ header h1 {
      align-items: center;
  }
 
- .psühholoog img {
+ .psyhholoog img {
      width: 200px;
  }
 
@@ -119,7 +119,7 @@ header h1 {
 }
 
 /* PSÜHHOLOOGID */
-.psühholoog1 {
+.psyhholoog1 {
     background: #5E8490;
     width: 200px;
     height: 300px;
@@ -131,7 +131,7 @@ header h1 {
 
 }
 
-.psühholoog1 img {
+.psyhholoog1 img {
     width: 200px;
 }
 
